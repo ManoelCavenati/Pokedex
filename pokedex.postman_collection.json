@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "c1830ad3-869c-4a4d-a11c-088a8f6abe2a",
+		"name": "pokedex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastra Pokémon Visto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\": 25,\r\n    \"nome\": \"Pikachu\",\r\n    \"imagem\": \"https://pngimg.com/uploads/pokemon/pokemon_PNG14.png\",\r\n    \"area\": \"floresta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemon/visto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"visto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastra Pokémon Capturado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\": 25,\r\n    \"nome\": \"Pikachu\",\r\n    \"descricao\":\"When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.\",\r\n    \"imagem\": \"https://pngimg.com/uploads/pokemon/pokemon_PNG14.png\",\r\n    \"tipo\":\"elétrico\",\r\n    \"categoria\":\"mouse\",\r\n    \"area\": \"floresta\",\r\n    \"altura\":0.4,\r\n    \"peso\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemon/capturado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"capturado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
